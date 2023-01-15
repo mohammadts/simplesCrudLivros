@@ -1,0 +1,18 @@
+<div id="book-page" class="container"><a href="/books">Voltar</a>
+
+<div class="container"><h1>{{book.title}}</h1>
+<p><span>Páginas:</span>{{book.pageqty}}</p>
+<p><span>Idioma:</span> {{book.language}}</p>
+<p><span>Descrição:</span>{{book.description}}</p>
+<p><span>Editora:</span>{{book.publisher}}</p>
+<p><span>Data de publicação:</span>{{book.publication_date}} </p>
+<p><span>ISBN-13:</span> {{book.isbn_13}}</p>
+<p><span>ISBN-10:</span> {{book.isbn_10}}</p>
+
+<div class="actions">
+<a href="/books/edit/{{book.id}}" class="button">Editar</a>
+<form action="/books/remove/{{book.id}}" method="POST"><input type="submit" value="Remover" class="button warning"></form>
+</div>
+</div>
+
+</div>
