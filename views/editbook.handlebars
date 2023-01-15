@@ -1,0 +1,44 @@
+<h1>Edite seu livro</h1>
+
+<form action="/books/updatebook" method="POST" class="form">
+  <input type="hidden" name="id" value="{{book.id}}">
+<div class="form-control">
+  <label for="title">Título:</label>
+  <input type="text" name="title" placeholder="Digite o título" value="{{book.title}}">
+</div>
+<div class="form-control">
+  <label for="description">Descrição:</label>
+  <input type="text" name="description" placeholder="Digite a descrição do livro" maxlength="1000" value="{{book.description}}">
+  </div>
+<div class="form-control">
+  <label for="pageqty">Quantidade de páginas:</label>
+  <input type="number" name="pageqty" placeholder="Digite a quantidade de páginas" value="{{book.pageqty}}">
+</div>
+
+<div class="form-control">
+  <label for="language">Idioma:</label>
+  <input type="text" name="language" placeholder="Digite o idioma do livro" value="{{book.language}}">
+</div>
+
+<div class="form-control">
+  <label for="publisher">Editora:</label>
+  <input type="text" name="publisher" placeholder="Editora" value="{{book.publisher}}">
+</div>
+
+<div class="form-control">
+  <label for="publication_date">Data de publicação:</label>
+  <input type="date" name="publication_date" placeholder="Data de publicação" value="{{book.publication_date}}">
+</div>
+
+<div class="form-control">
+  <label for="isbn_13">ISBN-13:</label>
+  <input type="text" name="isbn_13" placeholder="ISBN-13" value="{{book.isbn_13}}">
+</div>
+
+<div class="form-control">
+  <label for="isbn_10">ISBN-10:</label>
+  <input type="text" name="isbn_10" placeholder="ISBN-10" value="{{book.isbn_10}}">
+</div>
+
+<input type="submit" value="Salvar" class="button">
+</form>
